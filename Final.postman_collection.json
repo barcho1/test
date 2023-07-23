@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "b8546a60-d511-46e7-8dfe-436627670df2",
+		"name": "Final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27682657"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authorization",
+						"value": "Basic YmFyY2hvOkJhcmNobzEyMyE=",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "123",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"barcho\",\r\n  \"password\": \"Barcho123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic YmFyY2hvOkJhcmNobzEyMyE=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://demoqa.com/Account/v1/User/4fc3aa0f-4bf8-460c-b1b7-96e29219bc5d",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"Account",
+						"v1",
+						"User",
+						"4fc3aa0f-4bf8-460c-b1b7-96e29219bc5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic YmFyY2hvOkJhcmNobzEyMyE=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"4fc3aa0f-4bf8-460c-b1b7-96e29219bc5d\",\r\n  \"collectionOfIsbns\": [\r\n    {\r\n      \"isbn\": \"9781593277574\"\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic YmFyY2hvOkJhcmNobzEyMyE=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"isbn\": \"9781593277574\",\r\n  \"userId\": \"4fc3aa0f-4bf8-460c-b1b7-96e29219bc5d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Book",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "123",
+						"type": "text"
+					},
+					{
+						"key": "authorization",
+						"value": "Basic YmFyY2hvOkJhcmNobzEyMyE=",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": \"4fc3aa0f-4bf8-460c-b1b7-96e29219bc5d\",\r\n  \"isbn\": \"9781593275846\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://demoqa.com/BookStore/v1/Books/9781593277574",
+					"protocol": "https",
+					"host": [
+						"demoqa",
+						"com"
+					],
+					"path": [
+						"BookStore",
+						"v1",
+						"Books",
+						"9781593277574"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
